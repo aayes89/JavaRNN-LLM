@@ -15,7 +15,7 @@
 # Funcionamiento
 Tamaño de vocabulario establecido por defecto: 10000 tokens <br>
 Cantidad de épocas de entrenamiento inicial: 10 <br>
-Tiempo de entrenamiento actual del modelo: 10h 34 min <br>
+Tiempo de entrenamiento actual del modelo: 10h 52 min <br>
 <!--Pérdida desde época inicial hasta final: Epoch 0, Loss: 9.2103 a Epoch 10, Loss: 9.2097--> <br>
 Recibe un corpus en texto plano con el que se realiza el entrenamiento, para el contexto de esta implementación, se utilizó el texto extraido del Proyecto Gutenberg <img width="129" height="80" alt="pg-logo-129x80" src="https://github.com/user-attachments/assets/e8d52d69-8216-4abd-ba64-615d98acf85c" />
  <a href="https://www.gutenberg.org/cache/epub/2000/pg2000.txt">El ingenioso hidalgo don Quijote de la Mancha</a> <br>
@@ -30,6 +30,11 @@ Recibe un corpus en texto plano con el que se realiza el entrenamiento, para el 
 * Regularización con dropout aplicada manualmente.
 * Modo interactivo.
 * Mecanismo de reentrenamiento conversacional por medio de comandos: <b>LOAD_TEXT</b> y <b>RECORD</b>
+* Guardado de modelo para evitar re-entrenamiento en cada ejecución.
+  
+# Modelo RNN 
+Dado el tamaño del modelo no será posible compartirlo directamente en esta plataforma, en cuanto encuentre un espacio adecuado para ello, dejo el enlace de referencia para la descarga así como capturas de su desempeño en tiempo real.<br>
+Si posee un conjunto de datos ya depurados con los que entrenar su propio modelo, no dude en hacerlo y compartir sus resultados.
 
 # Propuesta de mejoras
 * Utilizar la librería Java Binding for OpenCL (JOCL) para permitir el uso de GPU Nvidia o similares en los cálculos y mejorar el desempeño de la RNN durante su entrenamiento (fine-tuning).
@@ -41,3 +46,9 @@ Recibe un corpus en texto plano con el que se realiza el entrenamiento, para el 
 * Implementar UI que permita cambiar los parámetros de ejecución y sea más amigable con el usuario.
 * Factibilidad de guardado del modelo después de cada época transcurrida o esperar a que acabe las determinadas.
 * Validar si el uso de double en vez de float es correcto para cuestiones de manejo de memoria y escalabilidad.
+
+# Ayuda
+Este proyecto es el fruto de mi esfuerzo, tiempo libre e interés por llevar el desarrollo de la inteligencia artificial a otros lenguajes no tan populares en este contexto como Java.<br>
+Si Ud. es amante de este lenguaje y quiere apoyar con la mejora de este proyecto, no dude en hacerlo, mucho camino queda por recorrer, pero el primer paso ya está dado.
+
+# Capturas
