@@ -4,13 +4,13 @@
   Este proyecto surge por la curiosidad de constatar si es posible crear un modelo de inteligencia en Java puro funcional que pueda competir con los modelos actuales que utilizan Transformer. El primer paso está centrado en generar texto coherente y gramaticalmente correcto en Español, una vez alcansado este propósito, el modelo base resultante podría ser "entrenado" para "enseñarle" nuevo conocimiento.
 </p>
 
-# Especificaciones del equipo con el que fue entrenado el RNN
+# Especificaciones del equipo con el que fue entrenado la RNN
 * Intel(R) Xeon (R) CPU E5-2650 v4 @2.20GHz, 12 núcleos 24 hilos.
 * NVIDIA GeForce GTX 1060 6GB VRAM
 * 32GB de RAM 2133MHz
 
 # Funcionamiento
-Tamaño de vocabulario establecido: 10000 tokens <br>
+Tamaño de vocabulario establecido por defecto: 10000 tokens <br>
 Cantidad de épocas de entrenamiento inicial: 10 <br>
 Tiempo de entrenamiento actual del modelo: 10h 34 min <br>
 <!--Pérdida desde época inicial hasta final: Epoch 0, Loss: 9.2103 a Epoch 10, Loss: 9.2097--> <br>
@@ -35,4 +35,6 @@ Recibe un corpus en texto plano con el que se realiza el entrenamiento, para el 
 * Usar ReLU o Swish en capas superiores para no usar Math.tanh().
 * Utilizar LayerNorm o BatchNorm (si existe una implementación libre de librerías externas) para mantener el código puro.
 * Implementar word2vec o fastText embedding preentrenados en español para incializar We en conjunto con one-hot + embeddings.
-* Validar si el uso de double en vez de float es factible para cuestiones de manejo de memoria y escalabilidad.
+* Implementar UI que permita cambiar los parámetros de ejecución y sea más amigable con el usuario.
+* Factibilidad de guardado del modelo después de cada época transcurrida o esperar a que acabe las determinadas.
+* Validar si el uso de double en vez de float es correcto para cuestiones de manejo de memoria y escalabilidad.
