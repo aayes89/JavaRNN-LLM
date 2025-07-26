@@ -8,6 +8,9 @@
 * Intel(R) Xeon (R) CPU E5-2650 v4 @2.20GHz, 12 núcleos 24 hilos.
 * NVIDIA GeForce GTX 1060 6GB VRAM
 * 32GB de RAM 2133MHz
+* Java SE Development Kit 23 (JDK 23)
+* Windows 10 Pro
+<b>Nota: puede ser ejecutado también en MacOS o Linux</b>
 
 # Funcionamiento
 Tamaño de vocabulario establecido por defecto: 10000 tokens <br>
